@@ -248,22 +248,30 @@
 <div class="clock"></div>
 
 <script type="text/javascript">
-  var clock;
-
+  
   jQuery(document).ready(function($){
-    var clock;
+    // var clock;
 
-    clock = $('.clock').FlipClock({
-      clockFace: 'DailyCounter',
-      autoStart: false,
-      callbacks: {
-        stop: function() {
-          $('.message').html('The clock has stopped!')
-        }
-      }
-    });
+    // clock = $('.clock').FlipClock({
+    //   clockFace: 'DailyCounter',
+    //   autoStart: false,
+    //   callbacks: {
+    //     stop: function() {
+    //       $('.message').html('The clock has stopped!')
+    //     }
+    //   }
+    // });
 
-    clock.setTime(1885460);
+
+var date  = new Date(Date.UTC(2018, 8, 27, 4, 0, 0));
+var now   = new Date();
+var diff  = date.getTime()/1000 - now.getTime()/1000;
+var clock = $('.clock').FlipClock(diff, { 
+    clockFace: 'DailyCounter',
+    countdown: true
+});
+
+  
     clock.setCountdown(true);
     clock.start();
 
