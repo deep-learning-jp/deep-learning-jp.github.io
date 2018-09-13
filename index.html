@@ -30,6 +30,7 @@
     <link href="assets/css/et-line.css" rel="stylesheet">
     <link href="assets/css/ionicons.min.css" rel="stylesheet">
     <!-- Carousel CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre" rel="stylesheet">
     <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
     <!-- Animate CSS -->
@@ -38,6 +39,7 @@
     <link href="assets/css/main.css" rel="stylesheet">
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 
         <script src="assets/js/flipclock.js"></script>  
 </head>
@@ -74,6 +76,11 @@
                <li class="nav-item">
                     <a class="nav-link " href="#section3">About the Talk</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="#section4">Map</a>
+                </li>
+                
                <!--  
                 <li class="nav-item">
                     <a class="nav-link " href="#">News</a>
@@ -104,17 +111,35 @@
                             <h2 class="cover-title">
                                 Interested in Deep Learning ?
                             </h2>
-                            <strong class="cover-xl-text">Talk by Alex Lamb </strong>
-                            <p class="cover-date">
-                                27 September 2018 - The University of Tokyo, Japan
+
+                            <p class="cover-xl-text"">Talk by <span class = "myText_animation">Alex Lamb</span> </p>
+
+              
+
+                            <script  src="assets/js/typewriter.js"></script>
+
+                            <script>
+
+                                    (function (){
+
+                                        typeWriter(".myText_animation","Alex Lamb","example.ogg",400);
+                                        // typeWriter(".myText","Hello Universe","example.ogg",500);
+                                        // typeWriter("h5","Hello Galaxy","example.ogg",500);
+
+                                    }());
+
+                            </script>
+
+
+                            
+
+                            <p class="cover-date"><a href="https://calendar.google.com/calendar/r/eventedit?text=Talk+By+Alex+Lamb+(University+of+Montreal+and+Amazon) &dates=20180927T040000Z/20180927T050000Z&details=For+details,+link+here:+https://deep-learning-jp.github.io/&location=Hongo+Campus+The+University+of+Tokyo" target="_blank">
+                                27 September 2018 13:00 JST - The University of Tokyo, Hongo Campus, Japan </a>
                             </p>
                             <a href="https://goo.gl/forms/yBrIcjKF9IACaOYO2" target="_blank" class=" btn btn-primary btn-rounded" >
                                 Register Now !!
                             </a>
-                            <a href="https://calendar.google.com/calendar/r/eventedit?text=Talk+By+Alex+Lamb+(University+de+Montreal+and+ Amazon) &dates=20180927T040000Z/20180927T050000Z&details=For+details,+link+here:+https://deep-learning-jp.github.io/&location=Hongo+Campus+The+University+of+Tokyo" target="_blank" class=" btn btn-primary btn-rounded" >
-                                Add to calendar
-                            </a>
-
+                          
                         </div>
                     </div>
                 </div>
@@ -300,7 +325,7 @@ var clock = $('.clock').FlipClock(diff, {
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
                 <p>
-                    <a href="https://arxiv.org/abs/1806.05236"> <u>   Manifold Mixup </u> </a> is an extension of popular paper <a href="https://arxiv.org/abs/1710.09412"> <u> Mixup ( A new learning principle which trains a neural network on convex combinations of pairs of examples and their labels)</u> </a> encourages the network to produce more reasonable and less confident predictions at points with combinations of attributes not seen in the training set. 
+                    <a href="https://arxiv.org/abs/1806.05236" target="_blank"> <u>   Manifold Mixup </u> </a> is an extension of popular paper <a href="https://arxiv.org/abs/1710.09412" target="_blank"> <u> Mixup ( A new learning principle which trains a neural network on convex combinations of pairs of examples and their labels)</u> </a> encourages the network to produce more reasonable and less confident predictions at points with combinations of attributes not seen in the training set. 
                 </p>
             </div>
             <div class="col-12 col-md-6">
@@ -716,8 +741,38 @@ var clock = $('.clock').FlipClock(diff, {
                 </div>
             </div>
         </div>
-    </section> --> -->
+    </section> --> 
 <!--brands section end-->
+
+
+
+
+<!--speaker section-->
+<section class="pb100">
+
+
+
+    <span class="anchor" id="section4"></span>
+    <div class="container">
+        <div class="section_title mb50">
+            <h3 class="title">
+               Map
+            </h3>
+        </div>
+    </div>
+
+<div class="mapouter"><div class="gmap_canvas"><iframe width="1000" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=The%20library%20of%20Economics%20%2C%20University%20of%20Tokyo&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.deep-learning-jp.github.io"></a></div><style>.mapouter{text-align:right;height:500px;width:1000px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1000px;}</style></div>
+
+
+
+</section>
+
+
+
+
+
+
+
 
 <!--get tickets section -->
 <section class="bg-img pt100 pb100" style="background-image: url('assets/img/bg/tickets.png');">

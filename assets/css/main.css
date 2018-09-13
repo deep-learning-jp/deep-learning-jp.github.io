@@ -2032,7 +2032,12 @@ Cover
 .cover_slider .cover_item .slider_content .slider-content-inner .cover-xl-text {
   opacity: 0;
   text-transform: uppercase;
-  font-size: 35px;
+
+
+font-family: font-family: 'Frank Ruhl Libre', serif;
+
+
+  font-size: 25px;
   font-weight: 200;
   line-height: 1.1;
   color: #f50136;
@@ -2041,6 +2046,30 @@ Cover
   -webkit-transition: all 0.4s 600ms ease-in-out;
   transition: all 0.4s 600ms ease-in-out;
 }
+
+
+.myText_animation{
+
+
+
+  text-transform: uppercase;
+
+
+
+
+  font-size: 45px;
+  font-weight: 200;
+  line-height: 1.1;
+  color: #f50136;
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+  -webkit-transition: all 0.4s 600ms ease-in-out;
+  transition: all 0.4s 600ms ease-in-out;
+
+
+}
+
+
 .cover_slider .cover_item .slider_content .slider-content-inner .cover-date {
   font-size: 18px;
   color: #ffffff;
@@ -2051,6 +2080,7 @@ Cover
   transform: translateY(20px);
   -webkit-transition: all 0.4s 900ms ease-in-out;
   transition: all 0.4s 900ms ease-in-out;
+  text-decoration: underline;
 }
 .cover_slider .cover_item .slider_content .slider-content-inner a {
   opacity: 0;
@@ -3173,3 +3203,7 @@ textarea.form-control {
   margin-top: -115px; /*same height as header*/
   visibility: hidden;
 }
+
+
+
+
