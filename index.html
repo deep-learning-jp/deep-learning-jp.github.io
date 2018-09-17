@@ -17,9 +17,27 @@
 <!-- Adding Google Scholar Link -->
 
     <link rel="stylesheet" href="academic/css/academicons.min.css"/>
-    
+    <link rel="stylesheet" href="assets/css/flipclock.css">
 
-<link rel="stylesheet" href="assets/css/flipclock.css">
+
+
+
+
+
+    <!-- Tooltip classes for poshytip -->
+    <link rel="stylesheet" href="assets/poshytip/tip-yellow/tip-yellow.css" type="text/css" />
+
+
+    <link rel="stylesheet" href="assets/poshytip/tip-violet/tip-violet.css" type="text/css" />
+    <link rel="stylesheet" href="assets/poshytip/tip-darkgray/tip-darkgray.css" type="text/css" />
+    <link rel="stylesheet" href="assets/poshytip/tip-skyblue/tip-skyblue.css" type="text/css" />
+    <link rel="stylesheet" href="assets/poshytip/tip-yellowsimple/tip-yellowsimple.css" type="text/css" />
+    <link rel="stylesheet" href="assets/poshytip/tip-twitter/tip-twitter.css" type="text/css" />
+    <link rel="stylesheet" href="assets/poshytip/tip-green/tip-green.css" type="text/css" />
+
+
+
+
 
 
 
@@ -38,10 +56,31 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 
-        <script src="assets/js/flipclock.js"></script>  
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- added support for clock -->
+    <script src="assets/js/flipclock.js"></script>  
+
+<!-- added posytip  for speaker bio-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/poshytip/1.2/jquery.poshytip.js"></script>
+
+<!-- added support for typewriterjs on the front page -->
+
+    <script src="assets/js/core.js"></script>  
+
+
+
+<!-- <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+ -->
+
+<!-- Adding lightbox support for bio -->
+
+<!--  <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" /><script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script> -->
+
 </head>
 <body>
 <div class="loader">
@@ -112,29 +151,35 @@
                                 Interested in Deep Learning ?
                             </h2>
 
-                            <p class="cover-xl-text"">Talk by <span class = "myText_animation">Alex Lamb</span> </p>
+<!--                             <p class="cover-xl-text"">Talk by <span class = "myText_animation"></span> </p>
+ -->
 
-              
 
-                            <script  src="assets/js/typewriter.js"></script>
+                        <!--     <p class="cover-xl-text"">Talk by <span class = "typewriter_2"> Love me Soniye </span> </p>
 
-                            <script>
+               -->
+
+<p class="cover-xl-text"">Talk by <span id="app_typewriter" class="myText_animation"> </span> </p>
+                 
+
+
+                            
+
+ <!--                            <script>
 
                                     (function (){
 
-                                        typeWriter(".myText_animation","Alex Lamb","example.ogg",400);
-                                        // typeWriter(".myText","Hello Universe","example.ogg",500);
-                                        // typeWriter("h5","Hello Galaxy","example.ogg",500);
+                                        typeWriter(".myText_animation","Alex Lamb  (University of Montreal)","example.ogg",400);
 
                                     }());
 
-                            </script>
+                            </script> -->
 
 
                             
 
                             <p class="cover-date"><a href="https://calendar.google.com/calendar/r/eventedit?text=Talk+By+Alex+Lamb+(University+of+Montreal+and+Amazon) &dates=20180927T040000Z/20180927T050000Z&details=For+details,+link+here:+https://deep-learning-jp.github.io/&location=Hongo+Campus+The+University+of+Tokyo" target="_blank">
-                                27 September 2018 13:00 JST - The University of Tokyo, Hongo Campus, Japan </a>
+                                27 September 2018 13:00 JST - The University of Tokyo, Hongo Campus </a>
                             </p>
                             <a href="https://goo.gl/forms/yBrIcjKF9IACaOYO2" target="_blank" class=" btn btn-primary btn-rounded" >
                                 Register Now !!
@@ -208,12 +253,14 @@
                 <div class="icon_box_two">
                     <i class="ion-ios-calendar-outline"></i>
                     <div class="content">
+                        <a href="https://calendar.google.com/calendar/r/eventedit?text=Talk+By+Alex+Lamb+(University+of+Montreal+and+Amazon) &dates=20180927T040000Z/20180927T050000Z&details=For+details,+link+here:+https://deep-learning-jp.github.io/&location=Hongo+Campus+The+University+of+Tokyo" target="_blank">
                         <h5 class="box_title">
                             DATE
                         </h5>
                         <p>
                             27 September 2018 </br> 13:00 JST
                         </p>
+                    </a>
                     </div>
                 </div>
             </div>
@@ -225,9 +272,16 @@
                         <h5 class="box_title">
                             location
                         </h5>
-                        <p>
-                            Hongo Campus,</br> The University of Tokyo
+                        <a href="https://www.u-tokyo.ac.jp/campusmap/cam01_01_07_j.html" target="_blank">
+                            
+                            <p>
+                             Hongo Campus, International Academic Research Building,
+
+                             </br> The University of Tokyo
                         </p>
+
+
+                        </a>
                     </div>
                 </div>
             </div>
@@ -236,10 +290,10 @@
                 <div class="icon_box_two">
                     <i class="ion-ios-person-outline"></i>
                     <div class="content">
-                        <h5 class="box_title">
+                        <h5 id="demo-live-events" title="Alex is a researcher at University of Montreal working under the guidance of Prof. Yoshua Bengio on Deep Learning. He has published several notable papers in NIPS, CVPR and other major conferences. He is also currently a deep learning researcher at Preferred Networks" class="box_title">
                             Speaker
                         </h5>
-                        <p>
+                        <p >
                             Alex Lamb
                         </p>
                     </div>
@@ -249,14 +303,14 @@
             <div class="col-6 col-md-3  ">
                 <div class="icon_box_two">
                     <i class="ion-ios-pricetag-outline"></i>
-                    <div class="content">
+                    <a href="https://goo.gl/forms/yBrIcjKF9IACaOYO2" target="_blank" > <div class="content">
                         <h5 class="box_title">
                             Register
                         </h5>
                         <p>
                             Free
                         </p>
-                    </div>
+                    </div></a>
                 </div>
             </div>
         </div>
@@ -325,8 +379,7 @@ var clock = $('.clock').FlipClock(diff, {
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
                 <p>
-                   The Talk will be a part of series of talks by eminent Machine Learning and Deep Learning Researchers from University of Montreal, Google and University College London for the course <span> <a href="http://catalog.he.u-tokyo.ac.jp/g-detail?code=291324-04&year=2018&x=12&y=16" target="_blank"> <u>Deep Learning and Related Methods for Large Dataset Information Processing </u> </a> </span> taught by <a href="http://www.e.u-tokyo.ac.jp/fservice/faculty/fabinger/fabinger.j/fabinger01.j.html" target="_blank"> Prof. Michal Fabinger</a>. If you are not a student of University of Tokyo and would like to audit this class , please send a mail <a href="mailto:fabinger@gmail.com" target="_blank" onclick="window.open('your WS URL');">Click to Mail</a>
- 
+                   The Talk will be a part of series of talks by eminent Machine Learning and Deep Learning Researchers from University of Montreal, Google and University College London for the course <span> <a href="http://catalog.he.u-tokyo.ac.jp/g-detail?code=291324-04&year=2018&x=12&y=16" target="_blank"> <u>Deep Learning and Related Methods for Large Dataset Information Processing </u> </a> </span> taught by <a href="http://www.e.u-tokyo.ac.jp/fservice/faculty/fabinger/fabinger.j/fabinger01.j.html" target="_blank"> Prof. Michal Fabinger</a>.  
                </p>
             </div>
             <div class="col-12 col-md-6">
@@ -335,6 +388,13 @@ var clock = $('.clock').FlipClock(diff, {
                 
                     This is accomplished by training on convex combinations of the hidden state representations of data samples. Using this method, the authors demonstrate the  improved semi-supervised learning, learning with limited labeled data, and robustness to adversarial examples. <!-- In addition Manifold Mixup requires no (significant) additional computation making it a very useful NN learning algorithm. -->
                 </p>
+            </div>
+
+            <div class="addenum_nota">
+               N.B:  If you are not a student of University of Tokyo and would like to audit this class , please send a mail <a href="mailto:fabinger@gmail.com" target="_blank" "> Prof. Fabinger </a>.
+
+
+
             </div>
         </div>
 
@@ -416,7 +476,10 @@ var clock = $('.clock').FlipClock(diff, {
         <div class="col-md-3 col-sm-6">
             <div class="speaker_box">
                 <div class="speaker_img">
-                    <img src="assets/img/alex_lamb.png" alt="speaker name">
+
+
+                    <img   
+                    id="demo-live-events" title="Alex is a researcher at University of Montreal working under the guidance of Prof. Yoshua Bengio on Deep Learning. He has published several notable papers in NIPS, CVPR and other major conferences. He is also currently a deep learning researcher at Preferred Networks" src="assets/img/alex_lamb.png" alt="speaker name">
                     <div class="info_box">
                         <h5 class="name">Alex Lamb</h5>
                         <p class="position">  
@@ -425,6 +488,38 @@ var clock = $('.clock').FlipClock(diff, {
                 </div>
             </div>
         </div>
+
+
+<!------  Added support for lightbox on hover for spearke Bio    ---->
+
+
+<script type="text/javascript">
+    
+jQuery('#demo-live-events > img').poshytip({
+
+    className: 'tip-yellowsimple', 
+    liveEvents: true,
+    alignX: 'right',
+    alignY: 'center',
+    offsetX: 5,
+    showTimeout: 400,
+    fade: true
+ 
+});
+
+jQuery('#button-live-events').click(function() {
+    $('#demo-live-events').append(', <a title="Hey, there! This is a tooltip." href="#">Hover for a tooltip</a>');
+});
+
+
+
+
+
+</script>
+
+
+
+
         
 <!--         <div class="col-md-3 col-sm-6">
 
@@ -807,7 +902,6 @@ var clock = $('.clock').FlipClock(diff, {
             <div class="col-md-3 text-md-right text-center">
                 <a href="https://goo.gl/forms/yBrIcjKF9IACaOYO2" target="_blank" class="btn btn-primary btn-rounded mt30">Register Now !!</a>
             </div>
-        </div>
     </div>
 </section>
 <!--get tickets section end-->
@@ -970,7 +1064,9 @@ var clock = $('.clock').FlipClock(diff, {
 <script src="assets/js/wow.min.js"></script>
 <!-- Custom js -->
 <script src="assets/js/main.js"></script>
+<script  src="assets/js/typewriter.js"></script>
 
+<script  src="assets/js/typewriter_2.js"></script>
 
 
 </body>

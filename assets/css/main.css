@@ -2037,7 +2037,7 @@ Cover
 font-family: font-family: 'Frank Ruhl Libre', serif;
 
 
-  font-size: 25px;
+  font-size: 15px;
   font-weight: 200;
   line-height: 1.1;
   color: #f50136;
@@ -2052,20 +2052,29 @@ font-family: font-family: 'Frank Ruhl Libre', serif;
 
 
 
-  text-transform: uppercase;
+/*  text-transform: uppercase;
+*/
 
 
 
-
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 200;
-  line-height: 1.1;
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /*letter-spacing: .15em;
+*/
+
+  /*line-height: 1.1;
   color: #f50136;
   -webkit-transform: translateY(20px);
   transform: translateY(20px);
   -webkit-transition: all 0.4s 600ms ease-in-out;
   transition: all 0.4s 600ms ease-in-out;
-
+*/
 
 }
 
@@ -2306,7 +2315,7 @@ font-family: font-family: 'Frank Ruhl Libre', serif;
     font-size: 18px;
   }
   .cover_slider .cover_item .slider_content .slider-content-inner .cover-xl-text {
-    font-size: 46px;
+    font-size: 26px;
   }
   .cover_slider .cover_item .slider_content .slider-content-inner .cover-date {
     font-size: 14px;
@@ -3203,6 +3212,31 @@ textarea.form-control {
   margin-top: -115px; /*same height as header*/
   visibility: hidden;
 }
+
+
+
+.addenum_nota{
+text-transform: strong;
+font-style: cambria;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
