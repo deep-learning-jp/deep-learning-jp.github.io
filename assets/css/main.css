@@ -2059,9 +2059,9 @@ font-family: font-family: 'Frank Ruhl Libre', serif;
 
 
 
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 200;
-  color: #fff;
+  color: #f50136; 
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
