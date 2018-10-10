@@ -9,7 +9,7 @@ var typewriter = new Typewriter(app, {
 
 
 
-typewriter.typeString( '\xa0\xa0' +'Alex Lamb'+ '\xa0')
+typewriter.typeString( '\xa0\xa0' +'Kaz Sato'+ '\xa0')
     // .cursor('')
     .pauseFor(2500)
     .deleteAll()
