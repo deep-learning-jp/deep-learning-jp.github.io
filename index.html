@@ -8,7 +8,7 @@
     <meta name="author" content="ColorLib">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- ========== Title ========== -->
-    <title> Talk by Kaz Sato at University of Tokyo</title>
+    <title> Talk by David Ha (hardmaru) at University of Tokyo</title>
     <!-- ========== Favicon Ico ========== -->
     <!--<link rel="icon" href="fav.ico">-->
     <!-- ========== STYLESHEETS ========== -->
@@ -206,7 +206,7 @@
                     <a class="nav-link " href="#">News</a>
                 </li> -->
                 <li class="nav-item">
-                    <a class="nav-link " href="https://docs.google.com/forms/d/1_Kx8b4ePomlEZd_tJzjTrgtxfJpOjYf3BXpa5wdqMR4" target="_blank">Register</a>
+                    <a class="nav-link " href="https://docs.google.com/forms/d/e/1FAIpQLSdpEI6rw8SqKtL7ud8gh6667AeSdvfTSkI5EVnvm7vMuhO29w/viewform" target="_blank">Register</a>
                 </li>
                 <li class="search_btn">
                     <a  href="#">
@@ -229,7 +229,7 @@
                     <div class="container">
                         <div class="slider-content-center">
                             <h2 class="cover-title">
-                               Tensor Processing Unit: A processor for<br> neural networks designed by Google
+                               World Models (NIPS'18)<br> Sketch RNN
                             </h2>
 
 <!--                             <p class="cover-xl-text"">Talk by <span class = "myText_animation"></span> </p>
@@ -259,10 +259,10 @@
 
                             
 
-                            <p class="cover-date"><a href="https://calendar.google.com/calendar/r/eventedit?text=Talk+By+Kaz+Sato+(Staff+Developer+Advocate+Google) &dates=20181018T040000Z/20181018T050000Z&details=For+details,+link+here:+https://deep-learning-jp.github.io/&location=International+Academic+Research+Building+ Hongo+Campus+The+University+of+Tokyo" target="_blank">
-                                18th October 2018 13:00 - The University of Tokyo, Hongo Campus </a>
+                            <p class="cover-date"><a href="https://calendar.google.com/calendar/r/eventedit?text=Talk+By+David+Ha+(Research+Scientist+Google+Brain,+Tokyo) &dates=20181029T010000Z/20181029T033000Z&details=For+details,+link+here:+https://deep-learning-jp.github.io/&location=International+Academic+Research+Building+ Hongo+Campus+The+University+of+Tokyo" target="_blank">
+                                29th October 2018 10:00 AM - The University of Tokyo, Hongo Campus </a>
                             </p>
-                            <a href="https://docs.google.com/forms/d/1_Kx8b4ePomlEZd_tJzjTrgtxfJpOjYf3BXpa5wdqMR4" target="_blank" class=" btn btn-primary btn-rounded" >
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdpEI6rw8SqKtL7ud8gh6667AeSdvfTSkI5EVnvm7vMuhO29w/viewform" target="_blank" class=" btn btn-primary btn-rounded" >
                                 Register Now !
                             </a>
                           
@@ -334,12 +334,12 @@
                 <div class="icon_box_two">
                     <i class="ion-ios-calendar-outline"></i>
                     <div class="content">
-                        <a href="https://calendar.google.com/calendar/r/eventedit?text=Talk+By+Kaz+Sato+(Staff+Developer+Advocate+Google) &dates=20181018T040000Z/20181018T050000Z&details=For+details,+link+here:+https://deep-learning-jp.github.io/&location=International+Academic+Research+Building+ Hongo+Campus+The+University+of+Tokyo" target="_blank">
+                        <a href="https://calendar.google.com/calendar/r/eventedit?text=Talk+By+David+Ha+(Research+Scientist+Google+Brain,+Tokyo) &dates=20181029T010000Z/20181029T033000Z&details=For+details,+link+here:+https://deep-learning-jp.github.io/&location=International+Academic+Research+Building+ Hongo+Campus+The+University+of+Tokyo" target="_blank">
                         <h5 class="box_title">
                             DATE
                         </h5>
                         <p>
-                            18 October 2018 </br> 13:00 
+                            29 October 2018 </br> 10:00 AM 
                         </p>
                     </a>
                     </div>
@@ -385,7 +385,7 @@
                             Speaker
                         </h5>
                         <p >
-                            Kaz Sato
+                            David Ha
                         </p>
                     </div>
                 </div>
@@ -394,7 +394,7 @@
             <div class="col-6 col-md-3  ">
                 <div class="icon_box_two">
                     <i class="ion-ios-pricetag-outline"></i>
-                    <a href="https://docs.google.com/forms/d/1_Kx8b4ePomlEZd_tJzjTrgtxfJpOjYf3BXpa5wdqMR4" target="_blank" > <div class="content">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdpEI6rw8SqKtL7ud8gh6667AeSdvfTSkI5EVnvm7vMuhO29w/viewform" target="_blank" > <div class="content">
                         <h5 class="box_title">
                             Register
                         </h5>
@@ -437,7 +437,7 @@
     // });
 
 
-var date  = new Date(Date.UTC(2018, 9, 18, 4, 0, 0));
+var date  = new Date(Date.UTC(2018, 9, 29, 1, 0, 0));
 var now   = new Date();
 var diff  = date.getTime()/1000 - now.getTime()/1000;
 var clock = $('.clock').FlipClock(diff, { 
@@ -477,9 +477,9 @@ var clock = $('.clock').FlipClock(diff, {
             <div class="col-12 col-md-6">
                 <p>
 
-                  <u>  <a href="https://cloud.google.com/blog/products/ai-machine-learning/what-makes-tpus-fine-tuned-for-deep-learning " target="_blank">  Tensor Processing Unit (TPU) </a> </u>
-                      is a LSI designed by Google for neural network processing. TPU features a large-scale systolic array matrix unit that achieves outstanding performance-per-watt ratio. In this session we will learn how a minimalistic design philosophy and a tight focus on neural network inference use-cases enabled the high performance neural network accelerator chip. More details including comparisons can be found at this <u>  <a href="https://cloud.google.com/blog/products/gcp/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu" target="_blank">  Google blog post.</a></u>
-                      <!-- In addition Manifold Mixup requires no (significant) additional computation making it a very useful NN learning algorithm. -->
+                 In his most recent work <u> <a href="https://worldmodels.github.io/" target="_blank"> World Models </a> </u>  David Ha demonstrates the unsupervised training of a generative RNN to model RL environments through compressed spatial and temporal representations, achieving state of the art results in various environments. 
+                
+                His previous works includes <u> <a href="https://arxiv.org/abs/1704.03477" target="_blank"> Sketch-RNN</a>  </u>, a RNN that constructs stroke-based drawings of common objects. It is trained on thousands of human-drawn images representing hundreds of classes, like cats and crabs and the Mona Lisa. Try it out  <u>  <a href="https://magenta.tensorflow.org/assets/sketch_rnn_demo/index.html" target="_blank"> live</a> </u> and have fun!
                 </p>
             </div>
 
@@ -583,23 +583,23 @@ function myFunction() {
                     <div class="speaker">
                         <div class="image-holder">
                             <a class="anchor" id="kaz-sato3320"></a>
-                            <img onerror='this.onerror=null,this.src="assets/img/avatar.png"' src="assets/img/kaz_sato.jpg" class="lazy background-image" alt="Kaz Sato">
+                            <img onerror='this.onerror=null,this.src="assets/img/avatar.png"' src="assets/img/hardmaru.png" class="lazy background-image" alt="Kaz Sato">
 
                             <div class="responsive-overlay">
                                 <div class="text-center preserve3d">
                                     <div class="bio vertical-align"></div>
                                     <div class="social-links vertical-align">
 
-                                        <a href="https://github.com/kazunori279">
+                                        <a href="http://otoro.net/">
                                             <i class="icon fa fa-external-link"></i>
                                         </a>
                                         <a href="https://github.com/kazunori279">
                                             <i class="icon fa fa-github"></i>
                                         </a>
-                                        <a href="https://twitter.com/kazunori_279">
+                                        <a href="https://twitter.com/hardmaru?lang=en">
                                             <i class="icon fa   fa-twitter"></i>
                                         </a>
-                                        <a href="https://www.linkedin.com/in/kazunori279/">
+                                        <a href="https://www.linkedin.com/in/david-ha-168a012/">
                                             <i class="icon fa fa-linkedin"></i>
                                         </a>
                                     </div>
@@ -616,32 +616,36 @@ function myFunction() {
                                 <div class="pop">
                                     <div class="pop-header">
                                         <span class="s-popup-header-name">
-                                            <strong>Kaz Sato</strong><br>
-                                            (Developer Advocate Google)
+                                            <strong>David Ha</strong><br>
+                                            (Research Scientist, Google Brain, Tokyo)
                                         </span>
                                     </div>
                                     <div class="pop-over row">
                                         <p>
-                                            Kaz Sato is Staff Developer Advocate at Google Cloud team, Google Inc. Focusing on Machine Learning and Data Analytics products, such as TensorFlow, Cloud ML and BigQuery. Kaz has been invited to major events including Google Cloud Next SF, Google I/O, Strata NYC etc., authoring many GCP blog posts, and supporting developer communities for Google Cloud for over 8 years. He is also interested in hardwares and IoT, and has been hosting FPGA meetups since 2013.<span style=""></span>
+                                            
+David is a Research Scientist at Google Brain. His research interests include Recurrent Neural Networks, Creative AI, and Evolutionary Computing. Prior to joining Google, He worked at Goldman Sachs as a Managing Director, where he co-ran the fixed-income trading business in Japan. He obtained undergraduate and graduate degrees in Engineering Science and Applied Math from the University of Toronto. 
+He was also part of the prestigious Google Brain Residency in 2016 and leads the Google Brain team in Tokyo.
+
+                                             <span style=""></span>
                                         </p>
                                         <div id="speaker-social-icons" class="icons row">
                                             <div class="col-xs-1 col-sm-1 col-md-1">
-                                                <a href="https://github.com/kazunori279">
+                                                <a href="http://otoro.net/">
                                                     <i class="fa fa-home"></i>
                                                 </a>
                                             </div>
                                             <div class="col-xs-1 col-sm-1 col-md-1">
-                                                <a href="https://github.com/kazunori279">
+                                                <a href="https://github.com/hardmaru">
                                                     <i class="fa fa-github"></i>
                                                 </a>
                                             </div>
                                             <div class="col-xs-1 col-sm-1 col-md-1">
-                                                <a href="https://twitter.com/kazunori_279">
+                                                <a href="https://twitter.com/hardmaru?lang=en">
                                                     <i class="fa fa-twitter"></i>
                                                 </a>
                                             </div>
                                             <div class="col-xs-1 col-sm-1 col-md-1">
-                                                <a href="https://www.linkedin.com/in/kazunori279/">
+                                                <a href="https://www.linkedin.com/in/david-ha-168a012/">
                                                     <i class="fa fa-linkedin"></i>
                                                 </a>
                                             </div>
@@ -707,8 +711,8 @@ function myFunction() {
                                 </div>
                             </div>
                         </div>
-                        <span class="speaker-name">Kaz Sato</span><br>
-                        <span class="speaker-name org-name">Developer Advocate Google</span>
+                        <span class="speaker-name">David Ha</span><br>
+                        <span class="speaker-name org-name">Research Scientist Google Brain, Tokyo</span>
                     </div>
                 </div>
 
@@ -1168,10 +1172,10 @@ jQuery('#button-live-events').click(function() {
         </div>
         <div class="row justify-content-center align-items-center">
             <div class="col-md-9 text-md-left text-center color-light">
-                The talk is free to attend, but you are asked to register by <strong> 17th October 2018 17:00 JST </strong> so that we can choose a room of the right size. If you miss this deadline, please send an email to <u> <strong> <a href="mailto:fabinger@gmail.com" target="_blank" "> Michal Fabinger</a></strong></u>
+                The talk is free to attend, but you are asked to register by <strong> 27th October 2018 17:00 JST </strong> so that we can choose a room of the right size. If you miss this deadline, please send an email to <u> <strong> <a href="mailto:fabinger@gmail.com" target="_blank" "> Michal Fabinger</a></strong></u>
             </div>
             <div class="col-md-3 text-md-right text-center">
-                <a href="https://docs.google.com/forms/d/1_Kx8b4ePomlEZd_tJzjTrgtxfJpOjYf3BXpa5wdqMR4" target="_blank" class="btn btn-primary btn-rounded mt30">Register Now !</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdpEI6rw8SqKtL7ud8gh6667AeSdvfTSkI5EVnvm7vMuhO29w/viewform" target="_blank" class="btn btn-primary btn-rounded mt30">Register Now !</a>
             </div>
     </div>
 </section>

@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Talk by Kaz Sato (Google)">
+    <meta name="keywords" content="Deep Learning, Machine Learning, Tokyo, Events in tokyo,ml,dl,alex,mila,facebook,google">
+    <meta name="author" content="ColorLib">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ========== Title ========== -->
+    <title> Talk by Kaz Sato at University of Tokyo</title>
+    <!-- ========== Favicon Ico ========== -->
+    <!--<link rel="icon" href="fav.ico">-->
+    <!-- ========== STYLESHEETS ========== -->
+    <!-- Bootstrap CSS -->
+
+<!-- Adding Google Scholar Link -->
+
+    <link rel="stylesheet" href="academic/css/academicons.min.css"/>
+    <link rel="stylesheet" href="assets/css/flipclock.css">
+
+
+
+
+
+
+    <!-- Tooltip classes for poshytip -->
+    <link rel="stylesheet" href="assets/poshytip/tip-yellow/tip-yellow.css" type="text/css" />
+
+
+    <link rel="stylesheet" href="assets/poshytip/tip-violet/tip-violet.css" type="text/css" />
+    <link rel="stylesheet" href="assets/poshytip/tip-darkgray/tip-darkgray.css" type="text/css" />
+    <link rel="stylesheet" href="assets/poshytip/tip-skyblue/tip-skyblue.css" type="text/css" />
+    <link rel="stylesheet" href="assets/poshytip/tip-yellowsimple/tip-yellowsimple.css" type="text/css" />
+    <link rel="stylesheet" href="assets/poshytip/tip-twitter/tip-twitter.css" type="text/css" />
+    <link rel="stylesheet" href="assets/poshytip/tip-green/tip-green.css" type="text/css" />
+
+
+
+
+
+
+
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="assets/css/schedule.css" rel="stylesheet">
+    <!-- Fonts Icon CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/et-line.css" rel="stylesheet">
+    <link href="assets/css/ionicons.min.css" rel="stylesheet">
+    <!-- Carousel CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre" rel="stylesheet">
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- added support for clock -->
+    <script src="assets/js/flipclock.js"></script>  
+
+<!-- added posytip  for speaker bio-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/poshytip/1.2/jquery.poshytip.js"></script>
+
+<!-- added support for typewriterjs on the front page -->
+
+    <script src="assets/js/core.js"></script>  
+
+
+
+<!-- <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+ -->
+
+<!-- Adding lightbox support for bio -->
+
+<!--  <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" /><script src="//cdn.rawgit.com/noelboss/featherlight/1.3.2/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script> -->
+
+
+
+
+
+<!-- 
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="assets/js/map_label.js"></script>
+
+    <script>
+      function init() {
+        var myLatlng = new google.maps.LatLng(35.7145941, 139.7620428);
+        var myOptions = {
+          zoom: 13,
+          center: myLatlng,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById('map'), myOptions);
+
+        var mapLabel = new MapLabel({
+          text: 'Test',
+          position: new google.maps.LatLng(35.7145941, 139.7620428),
+          map: map,
+          fontSize: 35,
+          align: 'right'
+        });
+        mapLabel.set('position', new google.maps.LatLng(35.7145941, 139.7620428));
+
+        var marker = new google.maps.Marker();
+        marker.bindTo('map', mapLabel);
+        marker.bindTo('position', mapLabel);
+        marker.setDraggable(true);
+
+       
+
+        var changeFont = document.getElementById('change-font');
+        google.maps.event.addDomListener(changeFont, 'click', function() {
+          mapLabel.set('fontSize', document.getElementById('font').value);
+        });
+
+        var changeColor = document.getElementById('change-color');
+        google.maps.event.addDomListener(changeColor, 'click', function() {
+          mapLabel.set('fontColor', document.getElementById('font-color').value);
+        });
+
+        
+      google.maps.event.addDomListener(window, 'load', init);
+    </script>
+
+ -->  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+<div class="loader">
+    <div class="loader-outter"></div>
+    <div class="loader-inner"></div>
+</div>
+
+<!--header start here -->
+<header class="header navbar fixed-top navbar-expand-md">
+    <div class="container">
+      <!--   <a class="navbar-brand logo" href="#">
+            <img src="assets/img/logo.png" alt="Evento"/>
+        </a> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#headernav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-text-align-right"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
+            <ul class=" nav navbar-nav menu">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+             
+                <li class="nav-item">
+                    <a class="nav-link " href="#section1" >Details</a>
+                </li>
+
+               <li class="nav-item">
+                    <a class="nav-link " href="#section2">Speaker</a>
+                </li>
+
+
+               <li class="nav-item">
+                    <a class="nav-link " href="#section3">About the Talk</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="#section4">Map</a>
+                </li>
+                
+               <!--  
+                <li class="nav-item">
+                    <a class="nav-link " href="#">News</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link " href="https://docs.google.com/forms/d/1_Kx8b4ePomlEZd_tJzjTrgtxfJpOjYf3BXpa5wdqMR4" target="_blank">Register</a>
+                </li>
+                <li class="search_btn">
+                    <a  href="#">
+                       <i class="ion-ios-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!--header end here-->
+
+<!--cover section slider -->
+<section id="home" class="home-cover">
+    <div id="details_of_the_event">
+    <div class="cover_slider owl-carousel owl-theme">
+        <div class="cover_item" style="background: url('assets/img/bg/slider.png');">
+             <div class="slider_content">
+                <div class="slider-content-inner">
+                    <div class="container">
+                        <div class="slider-content-center">
+                            <h2 class="cover-title">
+                               Tensor Processing Unit: A processor for<br> neural networks designed by Google
+                            </h2>
+
+<!--                             <p class="cover-xl-text"">Talk by <span class = "myText_animation"></span> </p>
+ -->
+
+
+                        <!--     <p class="cover-xl-text"">Talk by <span class = "typewriter_2"> Love me Soniye </span> </p>
+
+               -->
+
+<p class="cover-xl-text"">Talk by <span id="app_typewriter" class="myText_animation"> </span> </p>
+                 
+
+
+                            
+
+ <!--                            <script>
+
+                                    (function (){
+
+                                        typeWriter(".myText_animation","Alex Lamb  (University of Montreal)","example.ogg",400);
+
+                                    }());
+
+                            </script> -->
+
+
+                            
+
+                            <p class="cover-date"><a href="https://calendar.google.com/calendar/r/eventedit?text=Talk+By+Kaz+Sato+(Staff+Developer+Advocate+Google) &dates=20181018T040000Z/20181018T050000Z&details=For+details,+link+here:+https://deep-learning-jp.github.io/&location=International+Academic+Research+Building+ Hongo+Campus+The+University+of+Tokyo" target="_blank">
+                                18th October 2018 13:00 - The University of Tokyo, Hongo Campus </a>
+                            </p>
+                            <a href="https://docs.google.com/forms/d/1_Kx8b4ePomlEZd_tJzjTrgtxfJpOjYf3BXpa5wdqMR4" target="_blank" class=" btn btn-primary btn-rounded" >
+                                Register Now !
+                            </a>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--         <div class="cover_item" style="background: url('assets/img/bg/slider.png');">
+            <div class="slider_content">
+                <div class="slider-content-inner">
+                    <div class="container">
+                        <div class="slider-content-left">
+                            <h2 class="cover-title">
+                                Interested in Deep Learning ?
+                            </h2>
+                            <strong class="cover-xl-text">Alex Lamb (Researcher from MILA)</strong>
+                            <p class="cover-date">
+                                27 September 2018  - Tokyo, Japan
+                            </p>
+                            <a href="#" class=" btn btn-primary btn-rounded" >
+                                Register Now !!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ -->  <!--       <div class="cover_item" style="background: url('assets/img/bg/slider.png');">
+            <div class="slider_content">
+                <div class="slider-content-inner">
+                    <div class="container">
+                        <div class="slider-content-center">
+                            <h2 class="cover-title">
+                                Prepare yourself for the
+                            </h2>
+                            <strong class="cover-xl-text">conference</strong>
+                            <p class="cover-date">
+                                12-14 February 2018  - Los Angeles, CA.
+                            </p>
+                            <a href="#" class=" btn btn-primary btn-rounded" >
+                                Buy Tickets Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div class="cover_nav">
+        <ul class="cover_dots">
+            <li class="active" data="0"><span>1</span></li>
+            <li  data="1"><span>2</span></li>
+            <li  data="2"><span>3</span></li>
+        </ul>
+    </div>
+    </div>
+</section>
+<!--cover section slider end -->
+
+<!--event info -->
+<section class="pt100 pb100">
+
+    <span class="anchor" id="section1"></span>
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="ion-ios-calendar-outline"></i>
+                    <div class="content">
+                        <a href="https://calendar.google.com/calendar/r/eventedit?text=Talk+By+Kaz+Sato+(Staff+Developer+Advocate+Google) &dates=20181018T040000Z/20181018T050000Z&details=For+details,+link+here:+https://deep-learning-jp.github.io/&location=International+Academic+Research+Building+ Hongo+Campus+The+University+of+Tokyo" target="_blank">
+                        <h5 class="box_title">
+                            DATE
+                        </h5>
+                        <p>
+                            18 October 2018 </br> 13:00 
+                        </p>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3  ">
+<!-- <a href="https://www.u-tokyo.ac.jp/campusmap/cam01_01_07_j.html" target="_blank"> -->
+<a href="assets/hongo_map.pdf" target="_blank">
+
+
+                <div class="icon_box_two">
+                    <i class="ion-ios-location-outline"></i>
+                    <div class="content">
+
+                        <h5 class="box_title">
+                            location
+                        </h5>
+                        
+                            
+                            <p>
+                             Hongo Campus, International Academic Research Building,
+
+                             </br> The University of Tokyo
+                        </p>
+
+
+
+                    </div>
+                </div>
+
+            </a>
+            </div>
+
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+
+
+
+                    <i class="ion-ios-person-outline"></i>
+                    <div class="content">
+                        <h5 id="demo-live-events" class="box_title">
+                            Speaker
+                        </h5>
+                        <p >
+                            Kaz Sato
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3  ">
+                <div class="icon_box_two">
+                    <i class="ion-ios-pricetag-outline"></i>
+                    <a href="https://docs.google.com/forms/d/1_Kx8b4ePomlEZd_tJzjTrgtxfJpOjYf3BXpa5wdqMR4" target="_blank" > <div class="content">
+                        <h5 class="box_title">
+                            Register
+                        </h5>
+                        <p>
+                            Free
+                        </p>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--event info end -->
+
+
+<!--event countdown -->
+<section class="pt100 pb100">
+    <div class="container">
+        <div class="section_title">
+            <h3 class="title">
+            Countdown Timer
+            </h3>
+        </div>
+<div class="clock"></div>
+
+<script type="text/javascript">
+  
+  jQuery(document).ready(function($){
+    // var clock;
+
+    // clock = $('.clock').FlipClock({
+    //   clockFace: 'DailyCounter',
+    //   autoStart: false,
+    //   callbacks: {
+    //     stop: function() {
+    //       $('.message').html('The clock has stopped!')
+    //     }
+    //   }
+    // });
+
+
+var date  = new Date(Date.UTC(2018, 9, 18, 4, 0, 0));
+var now   = new Date();
+var diff  = date.getTime()/1000 - now.getTime()/1000;
+var clock = $('.clock').FlipClock(diff, { 
+    clockFace: 'DailyCounter',
+    countdown: true
+});
+
+  
+    clock.setCountdown(true);
+    clock.start();
+
+  });
+</script>
+    </div>
+
+</section>
+
+<!--event count down end-->
+
+
+<!--about the event -->
+<section class="pt100 pb100">
+    <span class="anchor" id="section3"></span>
+    <div class="container">
+        <div class="section_title">
+            <h3 class="title">
+                About the Talk
+            </h3>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <p>
+                   The talk is a part of series of talks by highly accomplished Machine Learning
+ Researchers from University of Montreal, Google and Google Brain for the course <span> <a href="http://catalog.he.u-tokyo.ac.jp/g-detail?code=291324-04&year=2018&x=12&y=16" target="_blank"> <u>Deep Learning and Related Methods for Large Dataset Information Processing </u> </a> </span> taught by <a href="http://www.e.u-tokyo.ac.jp/fservice/faculty/fabinger/fabinger.j/fabinger01.j.html" target="_blank">  Michal Fabinger</a> at University of Tokyo.  
+               </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p>
+
+                  <u>  <a href="https://cloud.google.com/blog/products/ai-machine-learning/what-makes-tpus-fine-tuned-for-deep-learning " target="_blank">  Tensor Processing Unit (TPU) </a> </u>
+                      is a LSI designed by Google for neural network processing. TPU features a large-scale systolic array matrix unit that achieves outstanding performance-per-watt ratio. In this session we will learn how a minimalistic design philosophy and a tight focus on neural network inference use-cases enabled the high performance neural network accelerator chip. More details including comparisons can be found at this <u>  <a href="https://cloud.google.com/blog/products/gcp/an-in-depth-look-at-googles-first-tensor-processing-unit-tpu" target="_blank">  Google blog post.</a></u>
+                      <!-- In addition Manifold Mixup requires no (significant) additional computation making it a very useful NN learning algorithm. -->
+                </p>
+            </div>
+
+
+
+          <!--   <div class="addenum_nota">
+               N.B:  If you are <strong>not </strong>  a student at the University of Tokyo and would like to audit the whole course, you are welcome to do that. In this case, please email <u> <strong> <a href="mailto:fabinger@gmail.com" target="_blank" "> Michal Fabinger</a></strong></u>. Of course, you can attend the talk by Alex Lamb without auditing the whole course.
+            </div> -->
+        </div>
+
+        <!--event features-->
+       
+       <!--  <div class="row justify-content-center mt30">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="icon_box_one">
+                    <i class="lnr lnr-mic"></i>
+                    <div class="content">
+                        <h4> About Speaker</h4>
+                        <p>
+                            Alex Lamb is a 
+                        </p>
+                        <a href="#">read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="icon_box_one">
+                    <i class="lnr lnr-rocket"></i>
+                    <div class="content">
+                        <h4>8 hrs Marathon</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
+                        </p>
+                        <a href="#">read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="icon_box_one">
+                    <i class="lnr lnr-bullhorn"></i>
+                    <div class="content">
+                        <h4>Live Broadcast</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
+                        </p>
+                        <a href="#">read more</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="icon_box_one">
+                    <i class="lnr lnr-clock"></i>
+                    <div class="content">
+                        <h4>Early Bird</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec graviante.
+                        </p>
+                        <a href="#">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!--event features end-->
+    </div>
+</section>
+<!--about the event end -->
+
+
+<!--speaker section-->
+<section class="pb100">
+
+    <span class="anchor" id="section2"></span>
+    <div class="container">
+        <div class="section_title mb50">
+            <h3 class="title">
+               The speaker
+            </h3>
+        </div>
+    </div>
+
+
+    <div class="row justify-content-center no-gutters">
+
+
+
+
+<script>
+function myFunction() {
+    alert('The image could not be loaded.');
+}
+</script>
+
+
+
+
+
+                <div class="col-md-3 col-sm-6 speaker-column" >
+                    <div class="speaker">
+                        <div class="image-holder">
+                            <a class="anchor" id="kaz-sato3320"></a>
+                            <img onerror='this.onerror=null,this.src="assets/img/avatar.png"' src="assets/img/kaz_sato.jpg" class="lazy background-image" alt="Kaz Sato">
+
+                            <div class="responsive-overlay">
+                                <div class="text-center preserve3d">
+                                    <div class="bio vertical-align"></div>
+                                    <div class="social-links vertical-align">
+
+                                        <a href="https://github.com/kazunori279">
+                                            <i class="icon fa fa-external-link"></i>
+                                        </a>
+                                        <a href="https://github.com/kazunori279">
+                                            <i class="icon fa fa-github"></i>
+                                        </a>
+                                        <a href="https://twitter.com/kazunori_279">
+                                            <i class="icon fa   fa-twitter"></i>
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/kazunori279/">
+                                            <i class="icon fa fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+
+                        </div>
+                        <div class="pop-box hide">
+                            <div class="arrow">
+                                <span></span>
+                            </div>
+                            <div class="pop-container" id="pop-speaker-name">
+                                <div class="pop">
+                                    <div class="pop-header">
+                                        <span class="s-popup-header-name">
+                                            <strong>Kaz Sato</strong><br>
+                                            (Developer Advocate Google)
+                                        </span>
+                                    </div>
+                                    <div class="pop-over row">
+                                        <p>
+                                            Kaz Sato is Staff Developer Advocate at Google Cloud team, Google Inc. Focusing on Machine Learning and Data Analytics products, such as TensorFlow, Cloud ML and BigQuery. Kaz has been invited to major events including Google Cloud Next SF, Google I/O, Strata NYC etc., authoring many GCP blog posts, and supporting developer communities for Google Cloud for over 8 years. He is also interested in hardwares and IoT, and has been hosting FPGA meetups since 2013.<span style=""></span>
+                                        </p>
+                                        <div id="speaker-social-icons" class="icons row">
+                                            <div class="col-xs-1 col-sm-1 col-md-1">
+                                                <a href="https://github.com/kazunori279">
+                                                    <i class="fa fa-home"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-1 col-sm-1 col-md-1">
+                                                <a href="https://github.com/kazunori279">
+                                                    <i class="fa fa-github"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-1 col-sm-1 col-md-1">
+                                                <a href="https://twitter.com/kazunori_279">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-1 col-sm-1 col-md-1">
+                                                <a href="https://www.linkedin.com/in/kazunori279/">
+                                                    <i class="fa fa-linkedin"></i>
+                                                </a>
+                                            </div>
+                                            <a class="session-link clickable-link">
+                                                <div class="col-xs-1 col-sm-1 col-md-1">
+                                                    <i class="fa fa-share"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="social-buttons-speaker row">
+                                            <div class="fb-share facebook social-button">
+                                                <i class="fa fa-facebook fa s-button" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="tw-share twitter social-button">
+                                                <i class="fa fa-twitter fa s-button" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="go-share google social-button">
+                                                <i class="fa fa-google-plus fa s-button" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="li-share facebook social-button">
+                                                <i class="fa fa-linkedin fa s-button" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="row social-link">
+                                                <input class="speakers-inputbox" type="text" onclick="this.select()" value="base#kaz-sato3320" readonly\>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="line">
+                                    <!-- <h4 class="session-header text">
+                                        <strong>Sessions</strong>
+                                    </h4>
+                                    <div class="pop-speakers">
+                                        <div class="pop-over row">
+                                            <div class="sessions col-xs-12 col-md-12">
+                                                <h5>
+                                                    <strong>
+                                                        Thu, 22nd March <span id="session-location">Lecture Theatre</span>
+                                                    </strong>
+                                                </h5>
+                                                <a href="tracks.html#4569">
+                                                    <h4 style="background-color:#59f0d5;color:#000" class="sizeevent event">
+                                                        <span class="time-track">13:50 - 14:15 &nbsp;&bull;&nbsp;</span>
+                                                        <span>Real-world Machine Learning with TensorFlow and Cloud ML</span>
+                                                    </h4>
+                                                </a>
+                                                <h5>
+                                                    <strong>
+                                                        Fri, 23rd March <span id="session-location">Event Hall 2-2</span>
+                                                    </strong>
+                                                </h5>
+                                                <a href="tracks.html#4631">
+                                                    <h4 style="background-color:#e83700;color:#fff" class="sizeevent event">
+                                                        <span class="time-track">14:45 - 16:15 &nbsp;&bull;&nbsp;</span>
+                                                        <span>CloudML Engine: Qwik Start</span>
+                                                    </h4>
+                                                </a>
+                                                <center>
+                                                    <h5 class="card-text"></h5>
+                                                </center>
+                                            </div>
+                                        </div> 
+                                    </div>-->
+                                </div>
+                            </div>
+                        </div>
+                        <span class="speaker-name">Kaz Sato</span><br>
+                        <span class="speaker-name org-name">Developer Advocate Google</span>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+
+
+                    <img   
+                    id="demo-live-events" title="Alex is a researcher at University of Montreal working under the guidance of Prof. Yoshua Bengio on Deep Learning. He has published several notable papers in NIPS, CVPR and other major conferences. He is also currently a deep learning researcher at Preferred Networks" src="assets/img/alex_lamb.png" alt="speaker name">
+                    <div class="info_box">
+                        <h5 class="name">Alex Lamb</h5>
+                        <p class="position">  
+                         <a href="https://scholar.google.com/citations?user=BFzFy1YAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar ai-3x style="font-size:24px;""></i></a> </p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+<!------  Added support for lightbox on hover for spearke Bio    ---->
+
+
+<script type="text/javascript">
+    
+jQuery('#demo-live-events > img').poshytip({
+
+    className: 'tip-yellowsimple', 
+    liveEvents: true,
+    alignX: 'right',
+    alignY: 'center',
+    offsetX: 5,
+    showTimeout: 400,
+    fade: true
+ 
+});
+
+jQuery('#button-live-events').click(function() {
+    $('#demo-live-events').append(', <a title="Hey, there! This is a tooltip." href="#">Hover for a tooltip</a>');
+});
+
+
+
+
+
+</script>
+
+
+
+
+        
+<!--         <div class="col-md-3 col-sm-6">
+
+
+
+
+
+
+
+            <div class="speaker_box">
+                
+                    <div class="info_box">
+                        <h5 class="name">James Oliver</h5>
+                        <p class="position">CEO Company</p>
+                    </div>
+                </div> -->
+
+
+<!-- This talk will be presented by Alex Lamb a researcher under <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/" target="_blank"> Prof. Yoshua Bengio </a> and a Research Scientist at Amazon. Alex has published several seminal research papers in Deep Learning and frequently contributes with sharing his works on Quora <a href="https://www.facebook.com/alex.lamb1?ref=br_rs"> Facebook</a> and  
+ -->
+
+
+
+
+
+<!-- 
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/speakers/s3.png" alt="speaker name">
+                    <div class="info_box">
+                        <h5 class="name">Carla Banks</h5>
+                        <p class="position">CEO Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/speakers/s4.png" alt="speaker name">
+                    <div class="info_box">
+                        <h5 class="name">William Smith</h5>
+                        <p class="position">CEO Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/speakers/s5.png" alt="speaker name">
+                    <div class="info_box">
+                        <h5 class="name">Jessica Black</h5>
+                        <p class="position">CEO Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/speakers/s6.png" alt="speaker name">
+                    <div class="info_box">
+                        <h5 class="name">Patricia Stone</h5>
+                        <p class="position">CEO Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/speakers/s7.png" alt="speaker name">
+                    <div class="info_box">
+                        <h5 class="name">Duncan Stan</h5>
+                        <p class="position">CEO Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="speaker_box">
+                <div class="speaker_img">
+                    <img src="assets/img/speakers/s8.png" alt="speaker name">
+                    <div class="info_box">
+                        <h5 class="name">Patricia Stone</h5>
+                        <p class="position">CEO Company</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</section>
+<!--speaker section end -->
+
+<!--Price section-->
+    <!-- <section class="pb100">
+        <div class="container">
+            <div class="section_title mb50">
+                <h3 class="title">
+                    Pricing table
+                </h3>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-12">
+                    <div class="price_box active">
+                        <div class="price_highlight">
+                            recommended
+                        </div>
+                       <div class="price_header">
+                           <h4>
+                               Early Bird
+                           </h4>
+                           <h6>
+                               For the fast ones
+                           </h6>
+                       </div>
+                        <div class="price_tag">
+                            65 <sup>$</sup>
+                        </div>
+                        <div class="price_features">
+                            <ul>
+                                <li>
+                                    Early Entrance
+                                </li>
+                                <li>
+                                    Front seat
+                                </li>
+                                <li>
+                                    Complementary Drinks
+                                </li>
+                                <li>
+                                    Promo Gift
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price_footer">
+                            <a href="#" class="btn btn-primary btn-rounded">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="price_box">
+                        <div class="price_header">
+                            <h4>
+                                Start up
+                            </h4>
+                            <h6>
+                                For the begginers
+                            </h6>
+                        </div>
+                        <div class="price_tag">
+                            85 <sup>$</sup>
+                        </div>
+                        <div class="price_features">
+                            <ul>
+                                <li>
+                                    Early Entrance
+                                </li>
+                                <li>
+                                    Front seat
+                                </li>
+                                <li>
+                                    Complementary Drinks
+                                </li>
+                                <li>
+                                    Promo Gift
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price_footer">
+                            <a href="#" class="btn btn-primary btn-rounded">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="price_box">
+                        <div class="price_header">
+                            <h4>
+                                Corporate
+                            </h4>
+                            <h6>
+                                For the business
+                            </h6>
+                        </div>
+                        <div class="price_tag">
+                            95 <sup>$</sup>
+                        </div>
+                        <div class="price_features">
+                            <ul>
+                                <li>
+                                    Early Entrance
+                                </li>
+                                <li>
+                                    Front seat
+                                </li>
+                                <li>
+                                    Complementary Drinks
+                                </li>
+                                <li>
+                                    Promo Gift
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price_footer">
+                            <a href="#" class="btn btn-primary btn-rounded">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    < price section end -->
+
+    <!--event calender-->
+    <!-- <section class="pb100">
+        <div class="container">
+            <div class="table-responsive">
+                <table class="event_calender table">
+                    <thead class="event_title">
+                    <tr>
+                        <th>
+                            <i class="ion-ios-calendar-outline"></i>
+                            <span>next events calendar</span>
+                        </th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <img src="assets/img/cleander/c1.png" alt="event">
+                        </td>
+                        <td class="event_date">
+                            14
+                            <span>February</span>
+                        </td>
+                        <td>
+                            <div class="event_place">
+                                <h5>Conference in Amsterdam</h5>
+                                <h6>08 AM - 04 PM</h6>
+                                <p>Speaker: Daniel Hill</p>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary btn-rounded">Read More</a>
+                        </td>
+                        <td class="buy_link">
+                            <a href="#">buy now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="assets/img/cleander/c2.png" alt="event">
+                        </td>
+                        <td class="event_date">
+                            18
+                            <span>February</span>
+                        </td>
+                        <td>
+                            <div class="event_place">
+                                <h5>Conference in Amsterdam</h5>
+                                <h6>08 AM - 04 PM</h6>
+                                <p>Speaker: Daniel Hill</p>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary btn-rounded">Read More</a>
+                        </td>
+                        <td class="buy_link">
+                            <a href="#">buy now</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="assets/img/cleander/c3.png" alt="event">
+                        </td>
+                        <td class="event_date">
+                            22
+                            <span>February</span>
+                        </td>
+                        <td>
+                            <div class="event_place">
+                                <h5>Conference in Amsterdam</h5>
+                                <h6>08 AM - 04 PM</h6>
+                                <p>Speaker: Daniel Hill</p>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary btn-rounded">Read More</a>
+                        </td>
+                        <td class="buy_link">
+                            <a href="#">buy now</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section> -->
+    <!--event calender end -->
+
+    <!--brands section -->
+  <!--   <section class="bg-gray pt100 pb100">
+        <div class="container">
+            <div class="section_title mb50">
+                <h3 class="title">
+                    our partners
+                </h3>
+            </div>
+            <div class="brand_carousel owl-carousel">
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/b1.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/b2.png" alt="brand">
+                </div>
+
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/b3.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/b4.png" alt="brand">
+                </div>
+                <div class="brand_item text-center">
+                    <img src="assets/img/brands/b5.png" alt="brand">
+                </div>
+            </div>
+        </div>
+    </section> --> 
+<!--brands section end-->
+
+
+
+
+<!--speaker section-->
+<section class="pb100">
+
+
+
+    <span class="anchor" id="section4"></span>
+    <div class="container">
+        <div class="section_title mb50">
+            <h3 class="title">
+               Map
+            </h3>
+        </div>
+    </div>
+
+
+
+<!-- 
+<div class="mapouter"> <div class="gmap_canvas"><iframe width="1000" height="500" id="gmap_canvas" src="https://www.google.co.jp/maps/place/International+Academic+Research+Building/@35.7101658,139.7620934,16z/data=!4m8!1m2!2m1!1seconomics+research+building+!3m4!1s0x60188c3aecba3bc1:0x929fe7d2bdf6c525!8m2!3d35.710298!4d139.7609986" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.deep-learning-jp.github.io"></a></div><style>.mapouter{text-align:right;height:500px;width:1000px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1000px;}</style></div> -->
+
+
+<div class="mapouter">
+
+<a href="assets/hongo_map.pdf" target="_blank">
+
+    <div class="gmap_canvas"><iframe width="1000" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=International%20Academic%20Research%20Building&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{text-align:right;height:500px;width:1000px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1000px;}</style>
+
+
+
+</a>
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!--get tickets section -->
+<section class="bg-img pt100 pb100" style="background-image: url('assets/img/bg/tickets.png');">
+    <div class="container">
+        <div class="section_title mb30">
+            <h3 class="title color-light">
+                Registration
+            </h3>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-9 text-md-left text-center color-light">
+                The talk is free to attend, but you are asked to register by <strong> 17th October 2018 17:00 JST </strong> so that we can choose a room of the right size. If you miss this deadline, please send an email to <u> <strong> <a href="mailto:fabinger@gmail.com" target="_blank" "> Michal Fabinger</a></strong></u>
+            </div>
+            <div class="col-md-3 text-md-right text-center">
+                <a href="https://docs.google.com/forms/d/1_Kx8b4ePomlEZd_tJzjTrgtxfJpOjYf3BXpa5wdqMR4" target="_blank" class="btn btn-primary btn-rounded mt30">Register Now !</a>
+            </div>
+    </div>
+</section>
+<!--get tickets section end-->
+
+<!--footer start -->
+<!-- <footer>
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <div class="col-md-4 col-12">
+                <div class="footer_box">
+                    <div class="footer_header">
+                        <div class="footer_logo">
+                            <img src="assets/img/logo.png" alt="evento">
+                        </div>
+                    </div>
+                    <div class="footer_box_body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in aazzzCurabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
+                        </p>
+                        <ul class="footer_social">
+                            <li>
+                                <a href="#"><i class="ion-social-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="ion-social-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="ion-social-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="ion-social-dribbble"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="ion-social-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="footer_box">
+                    <div class="footer_header">
+                        <h4 class="footer_title">
+                            instagram
+                        </h4>
+                    </div>
+                    <div class="footer_box_body">
+                        <ul class="instagram_list">
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/cleander/c1.png" alt="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/cleander/c2.png" alt="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/cleander/c3.png" alt="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/cleander/c3.png" alt="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/cleander/c2.png" alt="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="assets/img/cleander/c1.png" alt="instagram">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="footer_box">
+                    <div class="footer_header">
+                        <h4 class="footer_title">
+                            subscribe to our newsletter
+                        </h4>
+                    </div>
+                    <div class="footer_box_body">
+                        <div class="newsletter_form">
+                            <input type="email" class="form-control" placeholder="E-Mail here">
+                            <button class="btn btn-rounded btn-block btn-primary">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+ -->
+
+
+ <!-- <div class="copyright_footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-12">
+                <p>
+
+ -->
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    
+
+<!-- </p>
+            </div>
+            <div class="col-12 col-md-6 ">
+                <ul class="footer_menu">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Speakers</a>
+                    </li>
+                    <li>
+                        <a href="#">Events</a>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+ --><!--footer end -->
+
+<!-- jquery -->
+<script src="assets/js/jquery.min.js"></script>
+
+<script src="assets/js/speakers.min.js"></script>
+<!-- bootstrap -->
+<script src="assets/js/popper.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+<!--slick carousel -->
+<script src="assets/js/owl.carousel.min.js"></script>
+<!--parallax -->
+<script src="assets/js/parallax.min.js"></script>
+<!--Counter up -->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<!--Counter down -->
+<script src="assets/js/jquery.countdown.min.js"></script>
+<!-- WOW JS -->
+<script src="assets/js/wow.min.js"></script>
+<!-- Custom js -->
+<script src="assets/js/main.js"></script>
+<script  src="assets/js/typewriter.js"></script>
+
+<script  src="assets/js/typewriter_2.js"></script>
+
+
+</body>
+</html>

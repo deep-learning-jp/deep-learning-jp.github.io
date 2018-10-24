@@ -9,14 +9,14 @@ var typewriter = new Typewriter(app, {
 
 
 
-typewriter.typeString( '\xa0\xa0' +'Kaz Sato'+ '\xa0')
+typewriter.typeString( '\xa0\xa0' +'David Ha (hardmaru)'+ '\xa0')
     // .cursor('')
     .pauseFor(1500)
     .deleteAll()
-    .typeString('\xa0\xa0' + 'Staff Developer Advocate' + '\xa0')
+    .typeString('\xa0\xa0' + 'Research Scientist' + '\xa0')
     .pauseFor(1500)
     .deleteAll()
-    .typeString ('\xa0\xa0' +'Google Cloud, Google Inc'+ '\xa0')
+    .typeString ('\xa0\xa0' +'Google Brain, Tokyo'+ '\xa0')
     // .pauseFor(2500)
     // .deleteChars(7)
     // .typeString('<strong>altered!</strong>')
